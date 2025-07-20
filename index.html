@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIプログラミング学習コミュニティ - AIと共に未来をコードする</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .header-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 0px;
+            border: 3px solid #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        header h1 {
+            font-size: 2.5em;
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.1em;
+            color: #666;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+        .section {
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .feature {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            width: calc(33% - 40px);
+            min-width: 200px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .feature h3 {
+            font-size: 1.4em;
+            color: #0056b3;
+        }
+        .target-list {
+            list-style: none;
+            padding: 0;
+            display: inline-block;
+            text-align: left;
+        }
+        .target-list li {
+            background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23007bff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>') no-repeat left center;
+            background-size: 20px;
+            padding-left: 30px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .pricing-plans {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .plan {
+            border: 1px solid #ddd;
+            padding: 30px;
+            border-radius: 8px;
+            width: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .plan.recommended {
+            border-color: #007bff;
+            position: relative;
+            transform: scale(1.05);
+        }
+        .plan.recommended::before {
+            content: '一番人気';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #007bff;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        .plan h3 {
+            font-size: 1.5em;
+            color: #0056b3;
+            margin-top: 0;
+        }
+        .plan .price {
+            font-size: 2.2em;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #333;
+        }
+        .plan .price span {
+            font-size: 0.6em;
+            font-weight: normal;
+            color: #666;
+        }
+        .plan p {
+            margin: 5px 0 20px 0;
+            color: #666;
+            min-height: 40px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="images/icon.jpg" alt="コミュニティアイコン" class="header-icon">
+            <h1>AIプログラミングを、<br>仲間と共に学ぶ。</h1>
+            <p>初心者から経験者まで歓迎！最新のAI技術を学び、実践的なスキルを身につけるためのオンラインコミュニティです。</p>
+            <a href="https://discord.gg/your-invite-link" class="cta-button">今すぐDiscordに参加する</a>
+        </header>
+
+        <main>
+            <section class="section">
+                <h2>このコミュニティで得られること</h2>
+                <div class="features">
+                    <div class="feature">
+                        <h3>最新情報の共有</h3>
+                        <p>AIに関する最新ニュース、論文、便利なツールなどの情報が日々シェアされます。</p>
+                    </div>
+                    <div class="feature">
+                        <h3>質問・相談</h3>
+                        <p>学習中の疑問やエラーを気軽に質問できます。経験豊富なメンバーがサポートします。</p>
+                    </div>
+                    <div class="feature">
+                        <h3>プロジェクト・勉強会</h3>
+                        <p>仲間とチームを組んでAIアプリを開発したり、特定のテーマの勉強会を企画・参加できます。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" style="background-color: #f9f9f9;">
+                <h2>こんな方におすすめ</h2>
+                <ul class="target-list">
+                    <li>AIプログラミングに興味がある初心者</li>
+                    <li>スキルアップを目指す現役エンジニア</li>
+                    <li>一緒に学ぶ仲間が欲しい方</li>
+                    <li>ポートフォリオになる成果物を作りたい学生</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>料金プラン</h2>
+                <div class="pricing-plans">
+                    <div class="plan">
+                        <h3>月額プラン</h3>
+                        <div class="price">1,000<span>円/月</span></div>
+                        <p>まずは気軽に始めたい方に。</p>
+                        <a href="#" class="cta-button"  margin-top: auto;">メンバーになる</a>
+                    </div>
+                    <div class="plan recommended">
+                        <h3>年間プラン</h3>
+                        <div class="price">10,000<span>円/年</span></div>
+                        <p>2ヶ月分お得！<br>本気で学びたい方へ。</p>
+                        <a href="#" class="cta-button" style="margin-top: auto;">メンバーになる</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" style="background-color: #f9f9f9;">
+                <h2>参加は簡単</h2>
+                <p>下のボタンをクリックして、私たちのDiscordサーバーに参加するだけ！<br>あなたのご参加をお待ちしています。</p>
+                <a href="https://discord.gg/your-invite-link" class="cta-button">Discordに参加して学習を始める</a>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 AIプログラミング学習コミュニティ. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
